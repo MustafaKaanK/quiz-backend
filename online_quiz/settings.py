@@ -105,7 +105,7 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # CORS configuration
-CORS_ALLOWED_ORIGINS = env.list("CORS_ALLOWED_ORIGINS", default=["http://localhost:3000"])
+CORS_ALLOWED_ORIGINS=["http://localhost:3000", "https://dog-personality-test.vercel.app"]
 
 # Defines allowed host addresses
 ALLOWED_HOSTS = ['*']
