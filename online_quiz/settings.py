@@ -109,7 +109,7 @@ CORS_ALLOWED_ORIGINS = env('CORS_ALLOWED_ORIGINS').split(" ")
 #CORS_ALLOWED_ORIGINS http://localhost:3000 https://dog-personality-test.vercel.app
 
 # Defines allowed host addresses
-ALLOWED_HOSTS = env('ALLOWED_HOSTS')
+ALLOWED_HOSTS = ['*']
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
