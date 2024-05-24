@@ -105,21 +105,19 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # CORS configuration
-#CORS_ALLOWED_ORIGINS=["http://localhost:3000", "https://dog-personality-test.vercel.app"]
 CORS_ALLOWED_ORIGINS = env('CORS_ALLOWED_ORIGINS').split(" ")
 #CORS_ALLOWED_ORIGINS http://localhost:3000 https://dog-personality-test.vercel.app
 
 # Defines allowed host addresses
-ALLOWED_HOSTS = ['*']
-#
+ALLOWED_HOSTS = env('ALLOWED_HOSTS')
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-#
+DEBUG = env('DEBUG')
+
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-be2aup615vtb0ig+c(7qx%6p&+c(vu!_sz4b-8ft^perz9f$tr'
-#SECRET_KEY = env('SECRET_KEY')
+SECRET_KEY = env('SECRET_KEY')
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
