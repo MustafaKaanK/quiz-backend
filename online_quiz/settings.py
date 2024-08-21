@@ -125,7 +125,7 @@ SECRET_KEY = env('SECRET_KEY')
 DATABASES = {
     'default': dj_database_url.parse(env('DATABASE_URL'))
 }
-DATABASES['default']['PASSWORD'] = 'KaRkando?7838kark'
+DATABASES['default']['PASSWORD'] = 'gGpQASDP3d27D4tvKI1g44NmDYuUrKWT'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
